@@ -1,3 +1,4 @@
-# CodeGenerate by Eulercoder
+# Referraly by Eulercoder
 
-Will be updated soon. 
+
+Free and open source Referral System.:

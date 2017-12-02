@@ -1,28 +1,37 @@
 {
-  "name": "codegenerate",
+  "name": "referraly",
   "version": "0.0.1",
   "private": false,
+  "main": "app.js",
   "scripts": {
-    "start": "node bin/www"
+    "test": "./node_modules/.bin/mocha ./tests/unit.js --reporter spec --timeout 10000"
   },
+  "description": "Referral System built in nodejs, manage ranklist, coupon_codes, sharing counts and lot more",
+  "author": "Vikesh Tiwari <hi@eulercoder.me>",
+  "license": "MIT License",
   "dependencies": {
-    "async": "^2.5.0",
+    "activator": "^3.0.1",
+    "async": "^2.6.0",
     "body-parser": "^1.18.2",
-    "cookie-parser": "^1.4.3",
-    "debug": "^3.1.0",
+    "compression": "^1.7.1",
+    "connect-mongo": "^2.0.0",
+    "dotenv": "^4.0.0",
     "express": "^4.16.2",
-    "jade": "^1.11.0",
-    "mongoose": "^4.12.1",
-    "morgan": "^1.9.0",
-    "passport": "^0.4.0",
-    "serve-favicon": "^2.4.5"
+    "express-session": "^1.15.6",
+    "file-system": "^2.2.2",
+    "flash": "^1.1.0",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-rc.4",
+    "liquidjs": "^2.0.3",
+    "moment": "^2.19.3",
+    "mongoose": "^4.13.5",
+    "request": "^2.83.0",
+    "hashids": "1.1.4",
+    "serve-favicon": "*"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb-base": "^11.1.3",
-    "eslint-plugin-flowtype": "^2.32.1",
-    "eslint-plugin-import": "^2.2.0",
-    "nsp": "^2.1.0"
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "eslint": "^4.12.1"
   }
 }
